@@ -183,7 +183,7 @@ def m2s = m2.getAbsolutePath();
 // ======================== Building Mapped Jars =============================
 task downloadBuildtools(type: Download) {
     group "remapping"
-    src 'https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar'
+    src 'https://hub.gitcn.ml/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar'
     dest buildToolsJar
     onlyIf {
         !buildToolsJar.exists()
